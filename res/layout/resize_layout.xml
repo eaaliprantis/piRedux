@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RadioGroup
+        android:id="@+id/SizeGroupButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+        
+        <RadioButton
+            android:id="@+id/mobiledevicesizeRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Device (320 by 480px)"
+            android:textColor="#353839" />
+        
+        <RadioButton
+            android:id="@+id/tabletsizeRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tablet (1024 by 768px)"
+            android:textColor="#353839" />
+        
+        <RadioButton
+            android:id="@+id/largesizeRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HD (1920 by 1080px)"
+            android:textColor="#353839" />
+        
+        <RadioButton
+            android:id="@+id/customsizeRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom"
+            android:textColor="#353839" />
+    </RadioGroup>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        
+        <TextView
+            android:id="@+id/fitsAText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" (fits a"
+            android:textSize="15sp"
+            android:textColor="#353839" />
+        
+        <EditText
+            android:id="@+id/customWidth"
+            android:layout_width="100dp"
+            android:minWidth="100dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:cursorVisible="true"
+            android:maxLength="4" />
+        
+        <TextView
+            android:id="@+id/byText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="by"
+            android:textSize="15sp"
+            android:textColor="#353839" />
+        
+        <EditText
+         	android:id="@+id/customHeight"
+         	android:layout_width="100dp"
+         	android:minWidth="100dp"
+         	android:layout_height="wrap_content"
+         	android:singleLine="true"
+			android:inputType="number"
+	       	android:digits="0123456789"
+	       	android:cursorVisible="true"
+	       	android:maxLength="4" />
+        
+        <TextView
+     	    android:id="@+id/screenText"
+     	    android:layout_width="wrap_content"
+     	    android:layout_height="wrap_content"
+     	    android:text=" screen)"
+     	    android:textSize="15sp"
+            android:textColor="#353839" />
+    </LinearLayout>
+	
+	<TextView
+	    android:id="@+id/qualityText"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:text="Quality: 50"
+	    android:textSize="24sp" />
+   	
+   	<SeekBar
+   	    android:id="@+id/seekbar"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:max="100"
+   	    android:minWidth="350px" />
+
+	<CheckBox
+	    android:id="@+id/checkboxAspectRatio"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:checked = "true"
+	    android:text="Resize by Aspect Ratio" />
+     
+     <Button 
+         android:id="@+id/btnOK"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal|center_vertical"
+         android:gravity="center_horizontal|center_vertical"
+         android:minWidth="100dp"
+         android:text="OK"
+         />
+
+</LinearLayout>
